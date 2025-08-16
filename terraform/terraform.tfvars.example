@@ -1,0 +1,6 @@
+resource_group_name = "rg-espn-ff"
+location           = "East US"
+app_name          = "espn-ff-app"
+environment       = "prod"
+espn_s2          = "your_espn_s2_cookie"
+swid             = "your_swid_cookie"
