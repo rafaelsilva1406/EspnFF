@@ -34,3 +34,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Azure
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+terraform.tfvars
+
+# IDE
+.vscode/
+.idea/
