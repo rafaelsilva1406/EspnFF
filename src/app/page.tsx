@@ -14,11 +14,18 @@ export default function Home() {
       
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         <div className="px-4 py-6 sm:px-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link href="/league" className="group">
               <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow group-hover:bg-blue-50">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">League Overview</h3>
                 <p className="text-gray-600">View team standings, records, and league settings</p>
+              </div>
+            </Link>
+            
+            <Link href="/matchup" className="group">
+              <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow group-hover:bg-orange-50">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Live Matchup</h3>
+                <p className="text-gray-600">Interactive football field with real-time player progression</p>
               </div>
             </Link>
             

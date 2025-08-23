@@ -18,6 +18,12 @@ export default function Navigation() {
               League
             </Link>
             <Link 
+              href="/matchup" 
+              className="hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Live Matchup
+            </Link>
+            <Link 
               href="/teams" 
               className="hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium"
             >

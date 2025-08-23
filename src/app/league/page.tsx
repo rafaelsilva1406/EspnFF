@@ -9,8 +9,8 @@ export default function LeaguePage() {
   const [teams, setTeams] = useState<Team[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string>('');
-  const [leagueId, setLeagueId] = useState('');
-  const [year, setYear] = useState('2024');
+  const [leagueId, setLeagueId] = useState('1605970260');
+  const [year, setYear] = useState('2025');
 
   const fetchLeague = useCallback(async () => {
     if (!leagueId) return;
@@ -46,7 +46,7 @@ export default function LeaguePage() {
   }, [leagueId, year]);
 
   useEffect(() => {
-    const defaultLeagueId = process.env.NEXT_PUBLIC_DEFAULT_LEAGUE_ID;
+    const defaultLeagueId = process.env.DEFAULT_LEAGUE_ID;
     if (defaultLeagueId) {
       setLeagueId(defaultLeagueId);
     }
